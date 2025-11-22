@@ -1,0 +1,39 @@
+{
+    "name": "tool-timspm0-sysconfig",
+    "version": "1.25.0",
+    "description": "System config tool for embedded microcontrollers by TI",
+    "keywords": [
+        "ti",
+        "mspm0",
+        "toolchain",
+        "build tools"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Berkays/tool-mspm0-sysconfig"
+    },
+    "authors": [
+        {
+            "name": "Berkay Gursoy",
+            "email": "berkaygursoy@gmail.com",
+            "url": "https://github.com/Berkays"
+        }
+    ],
+    "license": "MIT",
+    "homepage": "https://www.ti.com/tool/SYSCONFIG",
+    "frameworks": [
+        "*"
+    ],
+    "platforms": [
+        "timspm0"
+    ],
+    "scripts": {
+        "postinstall": "python3 ./scripts/download_nodejs.py"
+    },
+    "export": {
+        "exclude": [
+            "bin/nodejs/node*",
+            "tmp"
+        ]
+    }
+}
