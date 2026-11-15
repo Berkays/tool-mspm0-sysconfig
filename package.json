@@ -1,7 +1,7 @@
 {
     "name": "tool-timspm0-sysconfig",
     "version": "1.25.0",
-    "description": "System config tool for embedded microcontrollers by TI",
+    "description": "TI SysConfig CLI for generating MSPM0 hardware configuration code (licensed by TI, see LICENSE.MD)",
     "keywords": [
         "ti",
         "mspm0",
@@ -19,7 +19,6 @@
             "url": "https://github.com/Berkays"
         }
     ],
-    "license": "MIT",
     "homepage": "https://www.ti.com/tool/SYSCONFIG",
     "frameworks": [
         "*"
@@ -28,7 +27,7 @@
         "timspm0"
     ],
     "scripts": {
-        "postinstall": "python3 ./scripts/download_nodejs.py"
+        "postinstall": "scripts/download_nodejs.py"
     },
     "export": {
         "exclude": [
